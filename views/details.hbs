@@ -1,0 +1,17 @@
+<h2>{{sandwiches.name}}</h2>
+<a href="/">Go Back Home</a>
+<a href="/{{sandwiches.id}}/edit">Edit</a>
+<a href="/{{sandwiches.id}}/delete">Delete</a>
+
+
+
+<div>
+    {{sandwiches.name}}
+    <br> {{sandwiches.directions}}
+    <br> rating : {{sandwiches.rating}}
+    <br>
+    <img src="{{sandwiches.imageurl}}" />
+    <br>
+    <a href="/{{sandwiches.id}}/edit">EDIT ME!</a>
+    <a href="/{{sandwiches.id}}/delete">DELETE ME!</a>
+</div>

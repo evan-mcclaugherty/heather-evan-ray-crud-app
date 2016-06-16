@@ -1,2 +1,13 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<a href='/create'>Create Your Own Sandwich!</a>
+
+<ul>
+    {{#each sandwiches}}
+    <li>
+        {{this.name}} <br>
+        {{this.directions}} <br>
+        rating : {{this.rating}} <br>
+        <img src="{{this.imageurl}}"/>
+        <a href="/{{this.id}}">See More...</a>
+    </li>
+    {{/each}}
+</ul>
